@@ -1,0 +1,43 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Checks Homebrew is installed
+      command: ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" creates=/usr/local/bin/brew
+    - name: Update Homebrew indexes
+      shell: brew update
+    - name: Install packages
+      homebrew: name={{item}} state=present
+      with_items:
+        - gcc46
+        - icu4c
+        - openssl
+        - imagemagick
+        - mongodb
+        - jpeg
+        - libxml2
+        - redis
+        - brew-pip
+        - git
+        - multimarkdown
+        - mysql
+        - sqlite
+        - graphviz
+        - libiconv
+        - postgresql
+        - elasticsearch
+        - nginx
+        - vim
+        - htop-osx
+        - node
+        - wget
+    - name: Install graphviz
+      homebrew: name=graphviz state=present install_options=with-app
+    - name: Setup RubyGems
+      lineinfile: "dest=~/.gemrc state=present create=yes line='gem: --no-ri --no-rdoc'"
+    - name: TextMate as default editor
+      lineinfile: dest=~/.zshrc state=present create=yes line='export EDITOR="/usr/local/bin/mate -w"'
+    - name: Rack apps in development environmentt
+      lineinfile: dest=~/.zshrc state=present create=yes line='export RACK_ENV=development'
+    - name: Alias for dir "re-entering"
+      lineinfile: dest=~/.zshrc state=present create=yes line='alias recd="cd ..;cd -"'
+    
