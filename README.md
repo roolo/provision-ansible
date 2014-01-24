@@ -11,7 +11,7 @@
 ## Usage
 
 - clone this repo
-- run `ansible-playbook -i inventory.yml packages.yml` in dir of the just cloned working copy of this repo
+- run `ansible-playbook -i inventory.yml  roles/common/packages.yml` in dir of the just cloned working copy of this repo
 
 ## Comment
 
