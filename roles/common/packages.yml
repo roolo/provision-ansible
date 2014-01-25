@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   tasks:
-    - name: Checks Homebrew is installed
+    - name: Install Homebrew
       command: ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" creates=/usr/local/bin/brew
     - name: Update Homebrew indexes
       shell: brew update
@@ -31,6 +31,31 @@
         - wget
     - name: Install graphviz
       homebrew: name=graphviz state=present install_options=with-app
+    - name: Initialize cask
+      command: brew tap phinze/cask creates=/usr/local/Library/Taps/phinze-cask
+    - name: Install cask
+      homebrew: name=brew-cask state=present update_homebrew=true
+    - name: Install Apps for OSX
+      command: brew cask install {{item.package_name}} creates="~/Applications/{{item.app_name}}.app"
+      with_items:
+        - package_name: google-chrome
+          app_name:     'Google Chrome'
+        - package_name: rubymine
+          app_name:     RubyMine
+        - package_name: textmate
+          app_name:     TextMate
+        - package_name: tower
+          app_name:     Tower
+        - package_name: kaleidoscope
+          app_name:     Kaleidoscope
+        - package_name: jewelrybox
+          app_name:     JewelryBox
+        - package_name: marked2
+          app_name:     Marked
+        - package_name: app-dot-net-orbit
+          app_name:     Orbit
+        - package_name: app-dot-net-wedge
+          app_name:     Wedge
     - name: Setup RubyGems
       lineinfile: "dest=~/.gemrc state=present create=yes line='gem: --no-ri --no-rdoc'"
     - name: TextMate as default editor
@@ -39,4 +64,3 @@
       lineinfile: dest=~/.zshrc state=present create=yes line='export RACK_ENV=development'
     - name: Alias for dir "re-entering"
       lineinfile: dest=~/.zshrc state=present create=yes line='alias recd="cd ..;cd -"'
-    
