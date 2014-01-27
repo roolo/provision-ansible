@@ -1,0 +1,26 @@
+---
+packages:
+  - brew-cask
+  - wget
+  - htop-osx
+  - git
+apps:
+  - package_name: google-chrome
+    app_name:     'Google Chrome'
+  - package_name: rubymine
+    app_name:     RubyMine
+  - package_name: textmate
+    app_name:     TextMate
+  - package_name: tower
+    app_name:     Tower
+  - package_name: kaleidoscope
+    app_name:     Kaleidoscope
+  - package_name: jewelrybox
+    app_name:     JewelryBox
+  - package_name: marked2
+    app_name:     Marked
+  - package_name: app-dot-net-orbit
+    app_name:     Orbit
+  - package_name: app-dot-net-wedge
+    app_name:     Wedge
+

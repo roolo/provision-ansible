@@ -3,8 +3,10 @@
   tasks:
     - name: Install Homebrew
       command: ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" creates=/usr/local/bin/brew
-    - name: Update Homebrew indexes
-      shell: brew update
+    - name: Initialize cask
+      command: brew tap phinze/cask creates=/usr/local/Library/Taps/phinze-cask
+    - name: Install graphviz (with brew update)
+      homebrew: name=graphviz state=present install_options=with-app update_homebrew=true
     - name: Install packages
       homebrew: name={{item}} state=present
       with_items:
@@ -29,12 +31,7 @@
         - htop-osx
         - node
         - wget
-    - name: Install graphviz
-      homebrew: name=graphviz state=present install_options=with-app
-    - name: Initialize cask
-      command: brew tap phinze/cask creates=/usr/local/Library/Taps/phinze-cask
-    - name: Install cask
-      homebrew: name=brew-cask state=present update_homebrew=true
+        - brew-cask
     - name: Install Apps for OSX
       command: brew cask install {{item.package_name}} creates="~/Applications/{{item.app_name}}.app"
       with_items:
@@ -56,11 +53,19 @@
           app_name:     Orbit
         - package_name: app-dot-net-wedge
           app_name:     Wedge
+        - package_name: linkinus
+          app_name:     Linkinus
+
     - name: Setup RubyGems
       lineinfile: "dest=~/.gemrc state=present create=yes line='gem: --no-ri --no-rdoc'"
+    - name: Install Oh my zsh
+      command: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh creates=~/.oh-my-zsh
     - name: TextMate as default editor
       lineinfile: dest=~/.zshrc state=present create=yes line='export EDITOR="/usr/local/bin/mate -w"'
     - name: Rack apps in development environmentt
       lineinfile: dest=~/.zshrc state=present create=yes line='export RACK_ENV=development'
     - name: Alias for dir "re-entering"
       lineinfile: dest=~/.zshrc state=present create=yes line='alias recd="cd ..;cd -"'
+    - name: Oh my zsh plugins
+      lineinfile: dest=~/.zshrc state=present create=yes line='plugins=(git rvm)'
+      
