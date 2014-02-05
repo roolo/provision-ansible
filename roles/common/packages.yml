@@ -5,6 +5,8 @@
       command: ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" creates=/usr/local/bin/brew
     - name: Initialize cask
       command: brew tap phinze/cask creates=/usr/local/Library/Taps/phinze-cask
+    - name: Install Pow
+      command: curl get.pow.cx | sh creates=~/.pow
     - name: Install graphviz (with brew update)
       homebrew: name=graphviz state=present install_options=with-app update_homebrew=true
     - name: Install packages
@@ -22,8 +24,6 @@
         - multimarkdown
         - mysql
         - sqlite
-        - graphviz
-        - libiconv
         - postgresql
         - elasticsearch
         - nginx
@@ -55,9 +55,17 @@
           app_name:     Wedge
         - package_name: linkinus
           app_name:     Linkinus
+        - package_name: sequel-pro
+          app_name:     'Sequel Pro'
+        - package_name: jewelrybox
+          app_name:     JewelryBox
 
+    - name: Start JewelryBox / Install RVM
+      command: open -a JewelryBox
     - name: Setup RubyGems
       lineinfile: "dest=~/.gemrc state=present create=yes line='gem: --no-ri --no-rdoc'"
+
+      # ZSH
     - name: Install Oh my zsh
       command: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh creates=~/.oh-my-zsh
     - name: TextMate as default editor
@@ -67,5 +75,8 @@
     - name: Alias for dir "re-entering"
       lineinfile: dest=~/.zshrc state=present create=yes line='alias recd="cd ..;cd -"'
     - name: Oh my zsh plugins
-      lineinfile: dest=~/.zshrc state=present create=yes line='plugins=(git rvm)'
-      
+      lineinfile: dest=~/.zshrc state=present create=yes line='plugins=(git rvm terminalapp)'
+    - name: Homebrew path
+      lineinfile: dest=~/.zshrc state=present create=yes line='export PATH=/usr/local/bin:$PATH'
+    - name: RVM path
+      lineinfile: dest=~/.zshrc state=present create=yes line='export PATH=$PATH:$HOME/.rvm/bin'
