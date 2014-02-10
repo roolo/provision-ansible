@@ -83,3 +83,5 @@
       lineinfile: dest=~/.zshrc state=present create=yes line='export PATH=/usr/local/bin:$PATH'
     - name: RVM path
       lineinfile: dest=~/.zshrc state=present create=yes line='export PATH=$PATH:$HOME/.rvm/bin'
+    - name: LANG
+      lineinfile: dest=~/.zshrc state=present create=yes line='export LANG=en_US.UTF-8'
