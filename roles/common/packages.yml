@@ -5,6 +5,8 @@
       command: ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" creates=/usr/local/bin/brew
     - name: Initialize cask
       command: brew tap phinze/cask creates=/usr/local/Library/Taps/phinze-cask
+    - name: Initialize Thoughtbots homebrew
+      command: brew tap thoughtbot/formulae creates=/usr/local/Library/Taps/thoughtbot-formulae
     - name: Install Pow
       command: curl get.pow.cx | sh creates=~/.pow
     - name: Install graphviz (with brew update)
@@ -32,6 +34,7 @@
         - node
         - wget
         - brew-cask
+        - gitsh
     - name: Install Apps for OSX
       command: brew cask install {{item.package_name}} creates="~/Applications/{{item.app_name}}.app"
       with_items:
