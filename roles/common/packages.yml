@@ -64,7 +64,7 @@
           app_name:     JewelryBox
 
     - name: Start JewelryBox / Install RVM
-      command: open -a JewelryBox
+      command: open -a JewelryBox creates=~/.rvm
     - name: Setup RubyGems
       lineinfile: "dest=~/.gemrc state=present create=yes line='gem: --no-ri --no-rdoc'"
 
