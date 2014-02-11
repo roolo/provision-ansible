@@ -1,0 +1,3 @@
+---
+ansbile_sublimer_user_pref_path:  "{{ansible_env['PWD']}}/roles/sublimer/files/Preferences.sublime-settings"
+sublime_text_user_pref_path:      "{{ansible_env['HOME']}}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings"
