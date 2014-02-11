@@ -1,0 +1,3 @@
+---
+- name: Link Sublime user Preferences
+  file: src={{base_path}}Preferences.sublime-settings dest=/Users/mailo/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings state=link force=yes
