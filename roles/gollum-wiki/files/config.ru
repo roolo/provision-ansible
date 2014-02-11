@@ -8,6 +8,7 @@ Precious::App.set(:default_markup, :markdown) # set your favorite markup languag
 Precious::App.set(:wiki_options, {  universal_toc:  false,
                                     h1_title:       true,
                                     live_preview:   true,
-                                    user_icons:     :gravatar }
+                                    user_icons:     :gravatar,
+                                    allow_uploads:  true }
 )
 run Precious::App
