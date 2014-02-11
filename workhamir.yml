@@ -1,0 +1,43 @@
+---
+- hosts: localhost
+  roles:
+    - sublimer
+    - homebrew-machine
+    - mysql-machine
+  vars:
+    packages:
+      - icu4c
+      - openssl
+      - imagemagick
+      - mongodb
+      - jpeg
+      - libxml2
+      - redis
+      - brew-pip
+      - git
+      - multimarkdown
+      - sqlite
+      - postgresql
+      - elasticsearch
+      - nginx
+      - vim
+      - htop-osx
+      - node
+      - wget
+      - brew-cask
+      - gitsh
+    apps:
+      - package_name: google-chrome
+        app_name:     'Google Chrome'
+      - package_name: rubymine
+        app_name:     RubyMine
+      - package_name: textmate
+        app_name:     TextMate
+      - package_name: tower
+        app_name:     Tower
+      - package_name: kaleidoscope
+        app_name:     Kaleidoscope
+      - package_name: marked2
+        app_name:     Marked
+      - package_name: linkinus
+        app_name:     Linkinus
