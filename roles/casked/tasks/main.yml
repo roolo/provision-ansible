@@ -1,0 +1,4 @@
+---
+- name:     Initialize cask
+  command:  brew tap phinze/cask creates=/usr/local/Library/Taps/phinze-cask
+
