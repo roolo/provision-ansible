@@ -1,3 +1,5 @@
 ---
+- name:     Install Sublime text 3 (not in cask yet)
+  command:  'open http://www.sublimetext.com/3 creates="~/Applications/Sublime Text.app"'
 - name: Link Sublime user Preferences
   file: 'src="{{ansbile_sublimer_user_pref_path}}" dest="{{sublime_text_user_pref_path}}" state=link force=yes'
