@@ -1,0 +1,8 @@
+---
+- name: Install Apps for OSX
+  command: brew cask install {{item.package_name}} creates="~/Applications/{{item.app_name}}.app"
+  with_items:
+    - package_name: app-dot-net-orbit
+      app_name:     Orbit
+    - package_name: app-dot-net-wedge
+      app_name:     Wedge
