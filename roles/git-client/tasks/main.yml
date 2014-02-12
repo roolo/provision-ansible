@@ -1,5 +1,5 @@
 ---
-- name: Install packages
+- name: Install git
   homebrew: name=git state=present
 
 - name: Link git global ignore file
@@ -7,5 +7,5 @@
   notify:
     - Configure the global ignore file
 
-- name: Install Apps for OSX
+- name: Install Tower
   command: brew cask install tower creates="~/Applications/Tower.app"
