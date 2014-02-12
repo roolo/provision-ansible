@@ -1,0 +1,3 @@
+---
+ansbile_git_client_gitignore_global_path: "{{ansible_env['PWD']}}/roles/git-client/files/gitignore_global"
+git_gitignore_global_path:                "{{ansible_env['HOME']}}/.gitignore_global"

@@ -1,0 +1,11 @@
+---
+- name: Install packages
+  homebrew: name=git state=present
+
+- name: Link git global ignore file
+  file: 'src="{{ansbile_git_client_gitignore_global_path}}" dest="{{git_gitignore_global_path}}" state=link force=yes'
+  notify:
+    - Configure the global ignore file
+
+- name: Install Apps for OSX
+  command: brew cask install tower creates="~/Applications/Tower.app"

@@ -4,6 +4,7 @@
     - sublimer
     - homebrew-machine
     - mysql-machine
+    - git-client
   vars:
     packages:
       - icu4c
@@ -14,7 +15,6 @@
       - libxml2
       - redis
       - brew-pip
-      - git
       - multimarkdown
       - sqlite
       - postgresql
@@ -33,8 +33,6 @@
         app_name:     RubyMine
       - package_name: textmate
         app_name:     TextMate
-      - package_name: tower
-        app_name:     Tower
       - package_name: kaleidoscope
         app_name:     Kaleidoscope
       - package_name: marked2
