@@ -1,0 +1,19 @@
+---
+- name: Install Oh my zsh
+  command: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh creates=~/.oh-my-zsh
+- name: TextMate as default editor
+  lineinfile: dest=~/.zshrc state=present create=yes line='export EDITOR="/usr/local/bin/mate -w"'
+- name: Rack apps in development environment
+  lineinfile: dest=~/.zshrc state=present line='export RACK_ENV=development'
+- name: Alias for dir "re-entering"
+  lineinfile: dest=~/.zshrc state=present line='alias recd="cd ..;cd -"'
+- name: OMZ plugins
+  lineinfile: dest=~/.zshrc state=present line='plugins=(git rvm terminalapp)' regexp='^plugins'
+- name: OMZ theme
+  lineinfile: dest=~/.zshrc state=present line='ZSH_THEME="aussiegeek"' regexp='^ZSH_THEME'
+- name: Homebrew path
+  lineinfile: dest=~/.zshrc state=present line='export PATH=/usr/local/bin:$PATH'
+- name: RVM path
+  lineinfile: dest=~/.zshrc state=present line='export PATH=$PATH:$HOME/.rvm/bin'
+- name: LANG
+  lineinfile: dest=~/.zshrc state=present line='export LANG=en_US.UTF-8'

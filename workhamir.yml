@@ -5,6 +5,7 @@
     - homebrew-machine
     - mysql-machine
     - git-client
+    - zsh-terminal
   vars:
     packages:
       - icu4c
