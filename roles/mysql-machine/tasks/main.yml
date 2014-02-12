@@ -1,6 +1,6 @@
 ---
-- name: Install packages
+- name:     Install packages
   homebrew: name=mysql state=present
 
-- name: Install Apps for OSX
-  command: brew cask install sequel-pro creates="~/Applications/Sequel Pro.app"
+- name:     Install Apps for OSX
+  command:  brew cask install sequel-pro creates="~/Applications/Sequel Pro.app"
