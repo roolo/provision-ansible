@@ -29,8 +29,6 @@
     apps:
       - package_name: google-chrome
         app_name:     'Google Chrome'
-      - package_name: rubymine
-        app_name:     RubyMine
       - package_name: textmate
         app_name:     TextMate
       - package_name: kaleidoscope

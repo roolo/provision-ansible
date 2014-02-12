@@ -5,4 +5,5 @@
   command: open -a JewelryBox creates=~/.rvm
 - name: Setup RubyGems
   lineinfile: "dest=~/.gemrc state=present create=yes line='gem: --no-ri --no-rdoc'"
-
+- name: Install RubyMine
+  command: brew cask install rubymine creates="~/Applications/RubyMine.app"
