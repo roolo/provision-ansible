@@ -40,3 +40,5 @@
         app_name:     Marked
       - package_name: linkinus
         app_name:     Linkinus
+      - package_name: macvim
+        app_name:     MacVim
