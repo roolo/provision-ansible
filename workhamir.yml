@@ -3,6 +3,8 @@
   roles:
     - sublimer
     - homebrew-machine
+    - ruby-dev
+    - ssl-requester
     - mysql-machine
     - git-client
     - zsh-terminal
