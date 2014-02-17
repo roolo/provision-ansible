@@ -1,0 +1,14 @@
+---
+- name: Ensure there is place for custom certificates
+  file: dest=~/.ca state=directory
+
+- name: Update certificates
+  get_url:  url=http://curl.haxx.se/ca/cacert.pem
+            dest=~/.ca/cacert.pem
+            force=yes
+
+- name: Tell zsh about custom certificates
+  lineinfile: dest=~/.zshrc
+              state=present
+              create=yes
+              line='export SSL_CERT_FILE=$HOME/.ca/cacert.pem'
