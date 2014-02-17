@@ -1,0 +1,28 @@
+---
+- name:     Install ViM
+  homebrew: name=vim state=present
+
+- name:     Install MacVim
+  command:  brew cask install macvim creates="~/Applications/MacVim.app"
+
+- name: Download Justus
+  git:  repo=https://github.com/carlhuda/janus.git
+        dest=~/.vim
+
+- name: Link configs
+  file: '   src="{{ansbile_vim_janus_path}}/files/.{{item}}"
+            dest="~/.{{item}}"
+            state=link
+            force=yes'
+  with_items:
+    - vimrc.after
+    - vimrc.before
+    - vimrc.local
+
+- name: Create Justus additional plugins dir
+  file:   dest=~/.janus
+          state=directory
+
+- name: Install vim-gitgutter
+  git:  repo=https://github.com/airblade/vim-gitgutter.git
+        dest=~/.janus/vim-gitgutter

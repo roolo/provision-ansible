@@ -8,6 +8,7 @@
     - mysql-machine
     - git-client
     - zsh-terminal
+    - vim-machine
   vars:
     packages:
       - icu4c
@@ -23,7 +24,6 @@
       - postgresql
       - elasticsearch
       - nginx
-      - vim
       - htop-osx
       - node
       - wget

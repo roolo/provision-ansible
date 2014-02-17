@@ -1,0 +1,3 @@
+let g:NERDTreeWinPos = "right"
+set guifont=Menlo\ Regular:h16
+autocmd BufWritePre * :%s/\s\+$//e
