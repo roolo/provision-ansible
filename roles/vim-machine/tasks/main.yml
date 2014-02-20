@@ -10,7 +10,7 @@
         dest=~/.vim
 
 - name: Link configs
-  file: '   src="{{ansbile_vim_janus_path}}/files/.{{item}}"
+  file: '   src="{{ansbile_vim_janus_path}}/files/{{item}}"
             dest="~/.{{item}}"
             state=link
             force=yes'
