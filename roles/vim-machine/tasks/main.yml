@@ -35,3 +35,11 @@
   get_url:  url=https://github.com/Lokaltog/powerline-fonts/blob/master/InconsolataDz/Inconsolata-dz%20for%20Powerline.otf?raw=true
     dest=~/Library/Fonts
 
+- name: Create dir for Jellybeans color scheme
+  file:   dest=~/.janus/jellybeans-colorscheme/plugin
+          state=directory
+
+- name: Download Jellybeans color scheme
+  get_url:  url=https://raw.github.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
+            dest=~/.janus/jellybeans-colorscheme/plugin
+
