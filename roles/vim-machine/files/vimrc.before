@@ -5,4 +5,4 @@ autocmd BufWritePre * :%s/\s\+$//e
 set guioptions-=L
 
 set rtp+=~/.janus/powerline/powerline/bindings/vim
-set guifont=Inconsolata-dz\ for\ Powerline:h16
+set guifont=Inconsolata-dz\ for\ Powerline:h15
