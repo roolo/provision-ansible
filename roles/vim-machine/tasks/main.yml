@@ -26,3 +26,7 @@
 - name: Install vim-gitgutter
   git:  repo=https://github.com/airblade/vim-gitgutter.git
         dest=~/.janus/vim-gitgutter
+
+- name: Install powerline
+  git:  repo=https://github.com/Lokaltog/powerline
+        dest=~/.janus/powerline

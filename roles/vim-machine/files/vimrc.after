@@ -1,1 +1,4 @@
-color desert
+"colorscheme jellybeans
+
+" Show matching brackets/parenthesis
+set showmatch
