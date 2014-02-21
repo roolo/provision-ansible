@@ -1,9 +1,13 @@
 ---
 - hosts: localhost
   roles:
-     - sublimer
-     - homebrew-machine
-     - app-dot-net-client
+    - sublimer
+    - homebrew-machine
+    - ruby-dev
+    - ssl-requester
+    - git-client
+    - zsh-terminal
+    - vim-machine
   vars:
     packages:
       - icu4c
@@ -12,30 +16,17 @@
       - jpeg
       - libxml2
       - brew-pip
-      - git
       - multimarkdown
       - sqlite
-      - vim
       - htop-osx
       - node
       - wget
-      - brew-cask
     apps:
-      - package_name: google-chrome
-        app_name:     'Google Chrome'
-      - package_name: rubymine
-        app_name:     RubyMine
       - package_name: textmate
         app_name:     TextMate
-      - package_name: tower
-        app_name:     Tower
       - package_name: kaleidoscope
         app_name:     Kaleidoscope
       - package_name: marked2
         app_name:     Marked
-      - package_name: linkinus
-        app_name:     Linkinus
-      - package_name: sequel-pro
-        app_name:     'Sequel Pro'
-      - package_name: jewelrybox
-        app_name:     JewelryBox
+      - package_name: macvim
+        app_name:     MacVim
