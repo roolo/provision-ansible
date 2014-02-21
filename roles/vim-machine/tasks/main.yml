@@ -43,3 +43,12 @@
   get_url:  url=https://raw.github.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
             dest=~/.janus/jellybeans-colorscheme/plugin
 
+- name: Create dir for nginx syntax
+  file:   dest=~/.janus/nginx/syntax
+          state=directory
+
+- name: Install nginx syntax
+  get_url:  url=http://www.vim.org/scripts/download_script.php?src_id=19394
+            dest=~/.janus/nginx/syntax
+
+
