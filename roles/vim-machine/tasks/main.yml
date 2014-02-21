@@ -27,6 +27,11 @@
   git:  repo=https://github.com/airblade/vim-gitgutter.git
         dest=~/.janus/vim-gitgutter
 
-- name: Install powerline
+- name: Install Powerline
   git:  repo=https://github.com/Lokaltog/powerline
         dest=~/.janus/powerline
+
+- name: Install Powerline font
+  get_url:  url=https://github.com/Lokaltog/powerline-fonts/blob/master/InconsolataDz/Inconsolata-dz%20for%20Powerline.otf?raw=true
+    dest=~/Library/Fonts
+
