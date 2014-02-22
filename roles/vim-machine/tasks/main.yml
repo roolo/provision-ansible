@@ -5,7 +5,7 @@
 - name:     Install MacVim
   command:  brew cask install macvim creates="~/Applications/MacVim.app"
 
-- name: Download Justus
+- name: Download Janus
   git:  repo=https://github.com/carlhuda/janus.git
         dest=~/.vim
 
@@ -19,7 +19,7 @@
     - vimrc.before
     - vimrc.local
 
-- name: Create Justus additional plugins dir
+- name: Create Janus additional plugins dir
   file:   dest=~/.janus
           state=directory
 
