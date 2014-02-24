@@ -15,7 +15,7 @@
   - install pip `sudo easy_install pip`
   - install ansible `sudo pip install ansible
 - clone this repo
-- run `ansible-playbook -i inventory.yml  roles/common/packages.yml` in dir of the just cloned working copy of this repo
+- run `ansible-playbook -v -i inventory.yml workhamir.yml` in dir of the just cloned working copy of this repo
 
 ## Comment
 
