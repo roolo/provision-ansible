@@ -9,7 +9,7 @@
 
 ## Quickstart
 
-- install ansible
+- install Ansible
   - [install latest Xcode](macappstores://itunes.apple.com/cz/app/xcode/id497799835?mt=12)
   - [install latest command line tools](https://developer.apple.com/downloads/index.action?searchTextField=command%20line%20tools)
   - install pip `sudo easy_install pip`
