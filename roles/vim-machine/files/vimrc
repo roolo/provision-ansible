@@ -3,7 +3,18 @@ filetype off                  " required
 
 " Font for Powerline
 set guifont=Inconsolata-dz\ for\ Powerline:h15
+" Shell for !
 set shell=/bin/zsh
+" Numbers of lines
+set number
+" Two spaces per tab
+set tabstop=2
+" Spaces instead of tabs
+set expandtab
+" Indendation
+set shiftwidth=2
+" folding
+set foldmethod=indent
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
