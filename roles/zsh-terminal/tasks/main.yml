@@ -17,3 +17,8 @@
   lineinfile: dest=~/.zshrc state=present line='export PATH=$PATH:$HOME/.rvm/bin'
 - name: LANG
   lineinfile: dest=~/.zshrc state=present line='export LANG=en_US.UTF-8'
+- name: Link zshenv
+  file:   src={{ansible_env['PWD']}}/roles/zsh-terminal/files/zshenv
+          dest=~/.zshenv
+          state=link
+
