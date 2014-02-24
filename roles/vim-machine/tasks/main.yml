@@ -49,6 +49,6 @@
 
 - name: Install nginx syntax
   get_url:  url=http://www.vim.org/scripts/download_script.php?src_id=19394
-            dest=~/.janus/nginx/syntax
+            dest=~/.janus/nginx/syntax/nginx.vim
 
 
