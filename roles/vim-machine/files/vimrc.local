@@ -1,6 +1,0 @@
-let g:solarized_termcolors=256
-"set t_Co=16
-
-
-" allow the cursor to pass the last character
-set virtualedit=onemore             " Cursor goes beyond last character

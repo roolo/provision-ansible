@@ -1,2 +1,2 @@
 ---
-ansbile_vim_janus_path: "{{ansible_env['PWD']}}/roles/vim-machine"
+ansbile_vim_machine_path: "{{ansible_env['PWD']}}/roles/vim-machine"

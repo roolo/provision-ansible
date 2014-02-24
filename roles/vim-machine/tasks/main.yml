@@ -5,50 +5,22 @@
 - name:     Install MacVim
   command:  brew cask install macvim creates="~/Applications/MacVim.app"
 
-- name: Download Janus
-  git:  repo=https://github.com/carlhuda/janus.git
-        dest=~/.vim
+- name: Download Vundle
+  git:  repo=https://github.com/gmarik/vundle.git
+        dest=~/.vim/bundle/vundle
 
-- name: Link configs
-  file: '   src="{{ansbile_vim_janus_path}}/files/{{item}}"
-            dest="~/.{{item}}"
+- name: Link Vundlefile
+  file: '   src="{{ansbile_vim_machine_path}}/files/Vundlefile"
+            dest="~/.vim/Vundlefile"
             state=link
             force=yes'
-  with_items:
-    - vimrc.after
-    - vimrc.before
-    - vimrc.local
 
-- name: Create Janus additional plugins dir
-  file:   dest=~/.janus
-          state=directory
-
-- name: Install vim-gitgutter
-  git:  repo=https://github.com/airblade/vim-gitgutter.git
-        dest=~/.janus/vim-gitgutter
-
-- name: Install Powerline
-  git:  repo=https://github.com/Lokaltog/powerline
-        dest=~/.janus/powerline
+- name: Link vimrc
+  file: '   src="{{ansbile_vim_machine_path}}/files/vimrc"
+            dest="~/.vimrc"
+            state=link
+            force=yes'
 
 - name: Install Powerline font
   get_url:  url=https://github.com/Lokaltog/powerline-fonts/blob/master/InconsolataDz/Inconsolata-dz%20for%20Powerline.otf?raw=true
-    dest=~/Library/Fonts
-
-- name: Create dir for Jellybeans color scheme
-  file:   dest=~/.janus/jellybeans-colorscheme/plugin
-          state=directory
-
-- name: Download Jellybeans color scheme
-  get_url:  url=https://raw.github.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
-            dest=~/.janus/jellybeans-colorscheme/plugin
-
-- name: Create dir for nginx syntax
-  file:   dest=~/.janus/nginx/syntax
-          state=directory
-
-- name: Install nginx syntax
-  get_url:  url=http://www.vim.org/scripts/download_script.php?src_id=19394
-            dest=~/.janus/nginx/syntax/nginx.vim
-
-
+            dest=~/Library/Fonts

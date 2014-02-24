@@ -1,7 +1,0 @@
-"colorscheme jellybeans
-
-" Show matching brackets/parenthesis
-set showmatch
-
-" Syntaxes
-au BufRead,BufNewFile /usr/local/etc/nginx/*,nginx.conf set ft=nginx

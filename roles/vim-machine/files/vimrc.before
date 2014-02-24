@@ -1,8 +1,0 @@
-let g:NERDTreeWinPos = "right"
-autocmd BufWritePre * :%s/\s\+$//e
-
-"No double scrollbar with NerdTree
-set guioptions-=L
-
-set rtp+=~/.janus/powerline/powerline/bindings/vim
-set guifont=Inconsolata-dz\ for\ Powerline:h15
