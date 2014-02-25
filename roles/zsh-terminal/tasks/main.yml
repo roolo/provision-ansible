@@ -1,8 +1,8 @@
 ---
 - name: Install Oh my zsh
   command: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh creates=~/.oh-my-zsh
-- name: TextMate as default editor
-  lineinfile: dest=~/.zshrc state=present create=yes line='export EDITOR="/usr/local/bin/mate -w"'
+- name: MacVim as default editor
+  lineinfile: dest=~/.zshrc state=present create=yes line='export EDITOR="mvim -f"' regexp='^export EDITOR='
 - name: Rack apps in development environment
   lineinfile: dest=~/.zshrc state=present line='export RACK_ENV=development'
 - name: Alias for dir "re-entering"
