@@ -1,20 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" Font for Powerline
-set guifont=Inconsolata-dz\ for\ Powerline:h15
-" Shell for !
-set shell=/bin/zsh
-" Numbers of lines
-set number
-" Two spaces per tab
-set tabstop=2
-" Spaces instead of tabs
-set expandtab
-" Indendation
-set shiftwidth=2
-" folding
-set foldmethod=indent
+source ~/.vim/config/basic-config.vim
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
@@ -26,7 +13,7 @@ call vundle#rc()
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
 
-source ~/.vim/Vundlefile
+source ~/.vim/config/Vundlefile
 
 filetype plugin indent on
 colorscheme jellybeans

@@ -9,9 +9,9 @@
   git:  repo=https://github.com/gmarik/vundle.git
         dest=~/.vim/bundle/vundle
 
-- name: Link Vundlefile
-  file: '   src="{{ansbile_vim_machine_path}}/files/Vundlefile"
-            dest="~/.vim/Vundlefile"
+- name: Link configs
+  file: '   src="{{ansbile_vim_machine_path}}/files/config"
+            dest="~/.vim/config"
             state=link
             force=yes'
 
