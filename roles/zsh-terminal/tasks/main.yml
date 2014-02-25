@@ -25,6 +25,9 @@
 - name:       LANG
   lineinfile: dest=~/.zshrc state=present line='export LANG=en_US.UTF-8'
 
+- name:       Vundlefile edit alias
+  lineinfile: dest=~/.zshrc state=present line='alias vudit="mvim ~/.vim/config/Vundlefile"'
+
 - name:   Link zshenv
   file:   src={{ansible_env['PWD']}}/roles/zsh-terminal/files/zshenv
           dest=~/.zshenv
