@@ -50,3 +50,5 @@ nmap <leader>s<right>  :rightbelow vnew<cr>
 nmap <leader>s<up>     :leftabove  new<cr>
 nmap <leader>s<down>   :rightbelow new<cr>
 
+" Comment line with CMD+/
+map <D-/> <plug>NERDCommenterToggle<CR>
