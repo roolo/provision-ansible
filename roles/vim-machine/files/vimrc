@@ -39,3 +39,7 @@ nmap <leader>s<down>   :rightbelow new<cr>
 
 " Comment line with CMD+/
 map <D-/> <plug>NERDCommenterToggle<CR>
+
+" Ruby
+au BufRead,BufNewFile Guardfile set filetype=ruby
+
