@@ -7,6 +7,7 @@ export SSL_CERT_FILE=$HOME/.ca/cacert.pem
 # Aliases
 alias vudit="mvim ~/.vim/config/Vundlefile"
 alias recd="cd ..;cd -"
+alias m="mvim ."
 
 # OMZ config
 DISABLE_UPDATE_PROMPT=true
