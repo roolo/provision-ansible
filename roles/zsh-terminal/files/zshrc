@@ -1,0 +1,12 @@
+export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:$HOME/.rvm/bin
+export LANG=en_US.UTF-8
+export RACK_ENV=development
+export SSL_CERT_FILE=$HOME/.ca/cacert.pem
+
+# Aliases
+alias vudit="mvim ~/.vim/config/Vundlefile"
+alias recd="cd ..;cd -"
+
+# OMZ config
+DISABLE_UPDATE_PROMPT=true
