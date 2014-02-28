@@ -28,6 +28,9 @@
 - name:       Vundlefile edit alias
   lineinfile: dest=~/.zshrc state=present line='alias vudit="mvim ~/.vim/config/Vundlefile"'
 
+- name:       Auto update Oh-my zsh
+  lineinfile: dest=~/.zshrc state=present line='DISABLE_UPDATE_PROMPT=true'
+
 - name:   Link zshenv
   file:   src={{ansible_env['PWD']}}/roles/zsh-terminal/files/zshenv
           dest=~/.zshenv
