@@ -42,3 +42,5 @@
         app_name:     Linkinus
       - package_name: macvim
         app_name:     MacVim
+      - package_name: reflector
+        app_name:     Reflector
