@@ -42,4 +42,5 @@ map <D-/> <plug>NERDCommenterToggle<CR>
 
 " Ruby
 au BufRead,BufNewFile Guardfile set filetype=ruby
-
+" Puppet
+au BufRead,BufNewFile *.pp set filetype=puppet
