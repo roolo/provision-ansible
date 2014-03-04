@@ -44,3 +44,5 @@
         app_name:     MacVim
       - package_name: reflector
         app_name:     Reflector
+      - package_name: caffeine
+        app_name:     Caffeine
