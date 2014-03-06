@@ -46,3 +46,5 @@
         app_name:     Reflector
       - package_name: caffeine
         app_name:     Caffeine
+      - package_name: pgadmin3
+        app_name:     pgAdmin3
