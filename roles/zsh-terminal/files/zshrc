@@ -3,6 +3,7 @@ export PATH=$PATH:$HOME/.rvm/bin
 export LANG=en_US.UTF-8
 export RACK_ENV=development
 export SSL_CERT_FILE=$HOME/.ca/cacert.pem
+export EDITOR="mvim -f"
 
 # Aliases
 alias vudit="mvim ~/.vim/config/Vundlefile"
