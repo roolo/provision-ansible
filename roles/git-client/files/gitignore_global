@@ -21,3 +21,4 @@ tmp/restart.txt
 .bundle/install.log
 # vim swap files
 *.swp
+*.swo
