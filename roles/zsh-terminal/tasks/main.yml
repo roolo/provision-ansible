@@ -18,3 +18,7 @@
           dest=~/.zshenv
           state=link
 
+- name:   Link Ag ignore file
+  file:   src={{ansible_env['PWD']}}/roles/zsh-terminal/files/agignore
+          dest=~/.agignore
+          state=link
