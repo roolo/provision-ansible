@@ -18,3 +18,6 @@ set colorcolumn=120
 " Following line creates solid background instead of just bar
 "let &colorcolumn=join(range(121,999),",")
 au BufRead,BufNewFile * highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
+" Session save
+nmap <leader>ss   :mks! ./.session.vis<cr>

@@ -8,7 +8,7 @@ export EDITOR="mvim -f"
 # Aliases
 alias vudit="mvim ~/.vim/config/Vundlefile"
 alias recd="cd ..;cd -"
-alias m="mvim ."
+alias m="mvim -S ./.session.vis"
 
 # OMZ config
 DISABLE_UPDATE_PROMPT=true

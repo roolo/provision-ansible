@@ -19,6 +19,9 @@ Thumbs.db
 #########################
 tmp/restart.txt
 .bundle/install.log
-# vim swap files
+
+# vim files
+
 *.swp
 *.swo
+.session.vis
