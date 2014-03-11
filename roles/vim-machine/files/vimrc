@@ -20,6 +20,7 @@ colorscheme jellybeans
 
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
+nmap <D-1> :NERDTreeFind<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 let g:NERDTreeWinPos = "right"
