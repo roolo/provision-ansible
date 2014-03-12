@@ -21,6 +21,8 @@ au BufRead,BufNewFile * highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 " Session save
 nmap <leader>ss   :mks! ./.session.vis<cr>
+" Data in session
+set sessionoptions=buffers,curdir,folds,tabpages
 
 " CtrlP
 let g:ctrlp_custom_ignore = '\v(node_modules|bower_components)'
