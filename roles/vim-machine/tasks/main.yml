@@ -2,6 +2,9 @@
 - name:     Install ViM
   homebrew: name=vim state=present
 
+- name:     Install ag for ag bundle
+  homebrew: name=the_silver_searcher state=present
+
 - name:     Install MacVim
   command:  brew cask install macvim creates="~/Applications/MacVim.app"
 
@@ -24,3 +27,4 @@
 - name: Install Powerline font
   get_url:  url=https://github.com/Lokaltog/powerline-fonts/blob/master/InconsolataDz/Inconsolata-dz%20for%20Powerline.otf?raw=true
             dest=~/Library/Fonts
+
