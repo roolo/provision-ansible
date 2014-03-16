@@ -1,1 +1,5 @@
 alias marked="open -a Marked "
+export PATH=/usr/local/share/npm/bin:~/.rvm/bin:/usr/local/bin:$PATH
+# export CC=/usr/local/bin/gcc-4.2
+export LC_CTYPE=en_US.UTF-8
+export LANG=en_US.UTF-8
