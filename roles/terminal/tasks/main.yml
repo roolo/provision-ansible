@@ -1,0 +1,33 @@
+---
+- name:   Put Terminal.app theme into place
+  copy:   src={{ansbile_terminal_profile_path}}
+          dest=/tmp/Homebrew1.terminal
+
+- name:   Put terminal fake border background into place
+  copy:   src={{ansbile_terminal_background_path}}
+          dest=~/Pictures/TerminalBack.png
+
+- name:     Install my Terminal.app theme
+  command:  osascript {{ansible_env['PWD']}}/roles/terminal/files/setup_terminalapp.scpt
+
+
+#- name:       OMZ plugins
+  #lineinfile: dest=~/.zshrc state=present line='plugins=(git rvm terminalapp)' regexp='^plugins'
+
+#- name:       OMZ theme
+  #lineinfile: dest=~/.zshrc state=present line='ZSH_THEME="aussiegeek"' regexp='^ZSH_THEME'
+
+#- name:       My zshrc contribution
+  #lineinfile: dest=~/.zshrc
+              #state=present
+              #line='source {{ansible_env['PWD']}}/roles/zsh-terminal/files/zshrc'
+
+#- name:   Link zshenv
+  #file:   src={{ansible_env['PWD']}}/roles/zsh-terminal/files/zshenv
+          #dest=~/.zshenv
+          #state=link
+
+#- name:   Link Ag ignore file
+  #file:   src={{ansible_env['PWD']}}/roles/zsh-terminal/files/agignore
+          #dest=~/.agignore
+          #state=link

@@ -1,0 +1,3 @@
+---
+ansbile_terminal_profile_path:    "{{ansible_env['PWD']}}/roles/terminal/files/Homebrew1.terminal"
+ansbile_terminal_background_path: "{{ansible_env['PWD']}}/roles/terminal/files/TerminalBack.png"
