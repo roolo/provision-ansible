@@ -1,12 +1,11 @@
 ---
 - hosts: localhost
   roles:
-    - sublimer
     - homebrew-machine
     - ruby-dev
     - ssl-requester
     - git-client
-    - zsh-terminal
+    - terminal
     - vim-machine
   vars:
     packages:
@@ -30,3 +29,7 @@
         app_name:     Marked
       - package_name: macvim
         app_name:     MacVim
+      - package_name: reflector
+        app_name:     Reflector
+      - package_name: caffeine
+        app_name:     Caffeine
