@@ -48,3 +48,7 @@
         app_name:     Caffeine
       - package_name: pgadmin3
         app_name:     pgAdmin3
+      - package_name: firefox
+        app_name:     Firefox
+      - package_name: opera
+        app_name:     Opera
