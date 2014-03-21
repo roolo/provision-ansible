@@ -24,6 +24,13 @@
             state=link
             force=yes'
 
+- name: Create file for local only configs
+  lineinfile: ' dest="~/.vim/localconfig.vim"
+                state=present
+                create=yes
+                line="\" Intented for local only configurations"
+              '
+
 - name: Install Powerline font
   get_url:  url=https://github.com/Lokaltog/powerline-fonts/blob/master/InconsolataDz/Inconsolata-dz%20for%20Powerline.otf?raw=true
             dest=~/Library/Fonts
