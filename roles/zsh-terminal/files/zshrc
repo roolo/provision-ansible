@@ -3,12 +3,3 @@ export PATH=$PATH:$HOME/.rvm/bin
 export RACK_ENV=development
 export SSL_CERT_FILE=$HOME/.ca/cacert.pem
 export EDITOR="mvim -f"
-
-# Aliases
-alias vudit="mvim ~/.vim/config/Vundlefile"
-alias recd="cd ..;cd -"
-alias m="mvim -S ./.session.vis"
-alias marked="open -a Marked "
-
-# OMZ config
-DISABLE_UPDATE_PROMPT=true

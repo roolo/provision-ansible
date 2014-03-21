@@ -2,3 +2,13 @@ export PATH=/usr/local/share/npm/bin:~/.rvm/bin:/usr/local/bin:$PATH
 # export CC=/usr/local/bin/gcc-4.2
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# Aliases
+alias vudit="mvim ~/.vim/config/Vundlefile"
+alias recd="cd ..;cd -"
+alias m="mvim -S ./.session.vis"
+alias marked="open -a Marked "
+
+# OMZ config
+DISABLE_UPDATE_PROMPT=true
+
