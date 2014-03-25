@@ -52,3 +52,5 @@
         app_name:     Firefox
       - package_name: opera
         app_name:     Opera
+      - package_name: mongohub
+        app_name:     MongoHub
