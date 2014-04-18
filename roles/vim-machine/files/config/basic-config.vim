@@ -1,5 +1,5 @@
 " Font for Powerline
-set guifont=Inconsolata-dz\ for\ Powerline:h15
+set guifont=Inconsolata-dz\ for\ Powerline:h18
 " Shell for !
 set shell=/bin/zsh
 " Numbers of lines
