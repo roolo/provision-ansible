@@ -26,3 +26,6 @@ set sessionoptions=buffers,curdir,folds,tabpages
 
 " CtrlP
 let g:ctrlp_custom_ignore = '\v(node_modules|bower_components)'
+
+" Vim Local History
+let g:vlh_repository_dir = '/Users/mailo/.vim/localhistory'

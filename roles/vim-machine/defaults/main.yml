@@ -1,2 +1,3 @@
 ---
 ansbile_vim_machine_path: "{{ansible_env['PWD']}}/roles/vim-machine"
+vim_local_history_path:   "{{ansible_env['HOME']}}/.vim/localhistory"
