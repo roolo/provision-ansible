@@ -3,7 +3,10 @@
   command: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh creates=~/.oh-my-zsh
 
 - name:       OMZ plugins
-  lineinfile: dest=~/.zshrc state=present line='plugins=(git rvm terminalapp)' regexp='^plugins'
+  lineinfile: dest=~/.zshrc
+              state=present
+              line='plugins=(git rvm terminalapp brew brew-cask vagrant ruby gitignore)'
+              regexp='^plugins'
 
 - name:       OMZ theme
   lineinfile: dest=~/.zshrc state=present line='ZSH_THEME="aussiegeek"' regexp='^ZSH_THEME'
