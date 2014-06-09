@@ -12,6 +12,8 @@ set expandtab
 set shiftwidth=2
 " folding
 set foldmethod=indent
+" show me my whitespaces
+set list
 
 " Right margin
 set colorcolumn=120
