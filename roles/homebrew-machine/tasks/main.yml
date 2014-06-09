@@ -1,10 +1,10 @@
 ---
 - name: Install packages
   homebrew: name={{item}} state=present
-  with_items: ${packages}
+  with_items: packages
 
 - include: ../../casked/tasks/main.yml
 
 - name: Install Apps for OSX
   command: brew cask install {{item.package_name}} creates="~/Applications/{{item.app_name}}.app"
-  with_items: ${apps}
+  with_items: apps
