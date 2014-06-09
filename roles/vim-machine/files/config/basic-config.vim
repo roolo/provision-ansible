@@ -26,6 +26,8 @@ nmap <leader>ss   :mks! ./.session.vis<cr>
 " Data in session
 set sessionoptions=buffers,curdir,folds,tabpages
 
+nmap <D-F>  :Ag w
+
 " CtrlP
 let g:ctrlp_custom_ignore = '\v(node_modules|bower_components)'
 
