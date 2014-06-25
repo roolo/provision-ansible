@@ -14,6 +14,9 @@ set shiftwidth=2
 set foldmethod=indent
 " show me my whitespaces
 set list
+" files are always unixy!
+set fileformat=unix
+au BufRead,BufNewFile * set fileformat=unix
 
 " Right margin
 set colorcolumn=120
