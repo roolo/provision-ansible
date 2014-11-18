@@ -1,8 +1,10 @@
 ---
 - name: Install JewelryBox
   command: brew cask install jewelrybox creates="~/Applications/JewelryBox.app"
+
 - name: Start JewelryBox / Install RVM
   command: open -a JewelryBox creates=~/.rvm
+
 - name: Setup RubyGems
   lineinfile: "dest=~/.gemrc state=present create=yes line='gem: --no-ri --no-rdoc'"
 
@@ -14,7 +16,9 @@
 
 - name: Install RubyMine
   command: brew cask install rubymine creates="~/Applications/RubyMine.app"
+
 - name: Ensure there is place for my projects
   file: dest=~/Projects/my state=directory
+  
 - git: repo=git@github.com:roolo/projects.git
        dest=~/Projects/my/projects
