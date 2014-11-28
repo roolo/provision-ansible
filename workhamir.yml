@@ -27,7 +27,6 @@
       - htop-osx
       - node
       - wget
-      - brew-cask
       - gitsh
     apps:
       - package_name: google-chrome
