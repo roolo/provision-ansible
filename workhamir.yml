@@ -9,6 +9,7 @@
     - git-client
     - zsh-terminal
     - vim-machine
+    - terminal
   vars:
     packages:
       - icu4c
