@@ -37,10 +37,10 @@
         app_name:     TextMate
       - package_name: kaleidoscope
         app_name:     Kaleidoscope
-      - package_name: linkinus
-        app_name:     Linkinus
       - package_name: marked
         app_name:     'Marked 2'
+      - package_name: limechat
+        app_name:     LimeChat
       - package_name: macvim
         app_name:     MacVim
       - package_name: reflector
