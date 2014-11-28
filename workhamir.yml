@@ -29,7 +29,6 @@
       - htop-osx
       - node
       - wget
-      - gitsh
     apps:
       - package_name: google-chrome
         app_name:     'Google Chrome'
