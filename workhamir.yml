@@ -10,6 +10,7 @@
     - zsh-terminal
     - vim-machine
     - terminal
+    - frontend-dev
   vars:
     packages:
       - icu4c
@@ -54,3 +55,5 @@
         app_name:     Opera
       - package_name: mongohub
         app_name:     MongoHub
+    npm_packages:
+      - bower
