@@ -29,6 +29,8 @@
       - htop-osx
       - node
       - wget
+      - freetds
+      - gmp # RVM - Ruby installation
     apps:
       - package_name: google-chrome
         app_name:     'Google Chrome'
