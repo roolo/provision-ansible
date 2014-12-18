@@ -11,6 +11,7 @@
     - vim-machine
     - terminal
     - frontend-dev
+    - elasticsearch
   vars:
     packages:
       - icu4c
@@ -24,7 +25,6 @@
       - multimarkdown
       - sqlite
       - postgresql
-      - elasticsearch
       - nginx
       - htop-osx
       - node

@@ -1,0 +1,4 @@
+---
+- name: Install homebrew package
+  homebrew: name=elasticsearch state=present
+
