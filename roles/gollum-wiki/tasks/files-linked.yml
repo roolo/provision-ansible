@@ -1,0 +1,25 @@
+---
+# These files can be linked because I don't commit (push neither) them. Link is good for getting changes back from
+#   wikies.
+#
+# Example:
+#   I wan't to run all wikies on same Ruby version, so I just change the version in one wiki and when checking
+#     provisioning repo 1) I see the change, which i shall commit 2) All local wikies already use the new Ruby version.
+
+- name: Link powrc
+  file: src={{ansible_env['PWD']}}/roles/gollum-wiki/files/powrc
+        dest={{ item.path }}/.powrc
+        state=link
+  with_items: wiki_paths
+
+- name: Link ruby-version
+  file: src={{ansible_env['PWD']}}/roles/gollum-wiki/files/ruby-version
+        dest={{ item.path }}/.ruby-version
+        state=link
+  with_items: wiki_paths
+
+- name: Link ruby-gemset
+  file: src={{ansible_env['PWD']}}/roles/gollum-wiki/files/ruby-gemset
+        dest={{ item.path }}/.ruby-gemset
+        state=link
+  with_items: wiki_paths

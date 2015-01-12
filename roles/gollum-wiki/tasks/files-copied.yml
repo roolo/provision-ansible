@@ -1,0 +1,20 @@
+---
+# These files are copied so I don't push just links to remote repository
+
+- name: Create readme for wiki
+  template: dest={{ item.path }}/README.md
+            src=README.md
+            force=no
+  with_items: wiki_paths
+
+- name: Copy Gemfile
+  copy: src={{ansible_env['PWD']}}/roles/gollum-wiki/files/Gemfile
+        dest={{ item.path }}/Gemfile
+        force=no
+  with_items: wiki_paths
+
+- name: Copy config.ru
+  copy: src={{ansible_env['PWD']}}/roles/gollum-wiki/files/config.ru
+        dest={{ item.path }}/config.ru
+        force=no
+  with_items: wiki_paths

@@ -1,0 +1,11 @@
+---
+- name: Check if wikis setup exists
+  stat: path=roles/gollum-wiki/vars/gollum-wikis.yml
+  register: wikis_setup_path
+
+
+- include_vars: gollum-wikis.yml
+  when: wikis_setup_path.stat.exists
+
+- include: file-works.yml
+  when: wikis_setup_path.stat.exists

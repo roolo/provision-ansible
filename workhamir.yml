@@ -12,6 +12,7 @@
     - terminal
     - frontend-dev
     - elasticsearch
+    - gollum-wiki
   vars:
     packages:
       - icu4c

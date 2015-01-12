@@ -1,0 +1,14 @@
+---
+
+- name: Create dir for wiki
+  file: dest={{ item.path }}/
+        state=directory
+  with_items: wiki_paths
+
+- name: Create git repo for wiki
+  shell: git init creates={{ item.path }}/.git chdir={{ item.path }}/
+  with_items: wiki_paths
+
+- include: files-linked.yml
+
+- include: files-copied.yml
