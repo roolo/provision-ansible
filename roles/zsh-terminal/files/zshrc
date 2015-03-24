@@ -1,5 +1,4 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.rvm/bin
 export RACK_ENV=development
-export SSL_CERT_FILE=$HOME/.ca/cacert.pem
 export EDITOR="mvim -f"
