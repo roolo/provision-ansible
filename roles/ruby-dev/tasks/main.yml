@@ -16,9 +16,11 @@
   with_items:
     - powder
     - git-up
+    - debase
+    - ruby-debug-ide
 
 - name: Ensure there is place for my projects
   file: dest=~/Projects/my state=directory
-  
+
 - git: repo=git@github.com:roolo/projects.git
        dest=~/Projects/my/projects
