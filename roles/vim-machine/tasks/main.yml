@@ -40,4 +40,4 @@
         state=directory
 
 - name:   Create repo for local history
-  shell:  git init chdir={{vim_local_history_path}}
+  shell:  git init chdir={{vim_local_history_path}} creates={{vim_local_history_path}}/.git
