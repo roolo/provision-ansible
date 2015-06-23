@@ -3,4 +3,4 @@
   homebrew: name=mysql state=present
 
 - name:     Install Apps for OSX
-  command:  brew cask install sequel-pro creates="~/Applications/Sequel Pro.app"
+  homebrew_cask: name=sequel-pro state=present

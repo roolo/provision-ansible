@@ -45,8 +45,6 @@
         app_name:     'Marked 2'
       - package_name: limechat
         app_name:     LimeChat
-      - package_name: macvim
-        app_name:     MacVim
       - package_name: reflector
         app_name:     Reflector
       - package_name: caffeine
@@ -59,5 +57,7 @@
         app_name:     Opera
       - package_name: mongohub
         app_name:     MongoHub
+      - package_name: dash
+        app_name:     Dash
     npm_packages:
       - bower

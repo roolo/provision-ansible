@@ -1,4 +1,0 @@
----
-- name: Install Apps for OSX
-  command: brew cask install {{item.package_name}} creates="~/Applications/{{item.app_name}}.app"
-  with_items: ${apps}

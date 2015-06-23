@@ -6,7 +6,7 @@
   homebrew: name=the_silver_searcher state=present
 
 - name:     Install MacVim
-  command:  brew cask install macvim creates="~/Applications/MacVim.app"
+  homebrew_cask: name=macvim state=present
 
 - name: Download Vundle
   git:  repo=https://github.com/gmarik/vundle.git
