@@ -8,4 +8,4 @@
     - Configure the global ignore file
 
 - name: Install Tower
-  command: brew cask install tower creates="~/Applications/Tower.app"
+  homebrew_cask: name=tower state=present
