@@ -21,6 +21,7 @@
       - node
       - wget
       - potrace
+      - gpp
     apps:
       - package_name: textmate
         app_name:     TextMate
