@@ -7,5 +7,8 @@
   notify:
     - Configure the global ignore file
 
+- name: Use global git ignore
+  command: git config --global core.excludesfile ~/.gitignore_global
+
 - name: Install Tower
   homebrew_cask: name=tower state=present
