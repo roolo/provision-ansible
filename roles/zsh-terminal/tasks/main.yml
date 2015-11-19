@@ -5,7 +5,7 @@
 - name:       OMZ plugins
   lineinfile: dest=~/.zshrc
               state=present
-              line='plugins=(git rvm terminalapp brew brew-cask vagrant ruby gitignore)'
+              line='plugins=(git rvm terminalapp brew brew-cask vagrant ruby gitignore z)'
               regexp='^plugins'
 
 - name:       OMZ theme
