@@ -28,11 +28,11 @@
       - postgresql
       - nginx
       - htop-osx
-      - node
       - wget
       - freetds
       - gmp # RVM - Ruby installation
       - v8
+      - nvm
     apps:
       - package_name: dash
         app_name:     Dash
