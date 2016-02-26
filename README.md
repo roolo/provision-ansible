@@ -13,7 +13,7 @@
   - [install latest Xcode](macappstores://itunes.apple.com/cz/app/xcode/id497799835?mt=12)
   - [install latest command line tools](https://developer.apple.com/downloads/index.action?searchTextField=command%20line%20tools)
   - install pip `sudo easy_install pip`
-  - install ansible `sudo pip install ansible
+  - install ansible `sudo pip install ansible`
 - clone this repo
 - run `ansible-playbook -v -i inventory.yml workhamir.yml` in dir of the just cloned working copy of this repo
 
