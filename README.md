@@ -1,6 +1,6 @@
 # Provision &mdash; Ansible
 
-*Template for prosvisioning local OSX machine for web apps development*
+*Template for provisioning local OSX machine for web apps development*
 
 ## Requirements
 
