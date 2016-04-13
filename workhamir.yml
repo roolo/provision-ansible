@@ -33,6 +33,8 @@
       - gmp # RVM - Ruby installation
       - v8
       - nvm
+      - ffmpeg
+      - macvim
     apps:
       - package_name: dash
         app_name:     Dash

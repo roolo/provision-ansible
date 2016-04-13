@@ -22,6 +22,8 @@
       - wget
       - potrace
       - gpp
+      - ffmpeg
+      - macvim
     apps:
       - package_name: textmate
         app_name:     TextMate
