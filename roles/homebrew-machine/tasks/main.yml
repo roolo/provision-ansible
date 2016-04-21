@@ -10,4 +10,4 @@
 
 - name: Install Apps for OSX
   homebrew_cask: name={{item.package_name}} state=present
-  with_items: apps
+  with_items: "{{apps}}"
