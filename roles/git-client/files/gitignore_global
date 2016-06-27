@@ -25,3 +25,7 @@ tmp/restart.txt
 *.swp
 *.swo
 .session.vis
+
+# CTags
+############
+tags
