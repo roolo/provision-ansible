@@ -1,39 +1,86 @@
 ---
 - hosts: localhost
   roles:
-    - homebrew-machine
-    - ruby-dev
-    - ssl-requester
-    - git-client
-    - terminal
-    - vim-machine
+    - role: git-client
+      tags:
+        - git
+    - role: homebrew-machine
+      tags:
+        - homebrew
+    - role: rooland-provisioning.atom-editor
+      tags:
+        - atom
+        - editor
+    - role: rooland-provisioning.rubymotion
+      tags:
+        - android
+        - ios
+        - osx
+        - ruby
+        - rubymotion
+    - role: rooland-provisioning.vim-machine
+      tags:
+        - editor
+        - vim
+    - role: ruby-dev
+      tags:
+        - dev
+        - language
+        - ruby
+    - role: ssl-requester
+      tags:
+        - ssl
+    - role: terminal
+      tags:
+        - terminal
+    - role: zsh-terminal
+      tags:
+        - terminal
+        - zsh
   vars:
     packages:
+      - brew-pip
+      - ffmpeg
+      - gpg
+      - gpp
+      - htop-osx
       - icu4c
-      - openssl
       - imagemagick
       - jpeg
       - libxml2
-      - brew-pip
       - multimarkdown
-      - sqlite
-      - htop-osx
       - node
-      - wget
+      - openssl
       - potrace
-      - gpp
-      - ffmpeg
-      - macvim
+      - sqlite
+      - wget
     apps:
-      - package_name: textmate
-        app_name:     TextMate
-      - package_name: kaleidoscope
-        app_name:     Kaleidoscope
-      - package_name: marked
-        app_name:     Marked
-      - package_name: reflector
-        app_name:     Reflector
       - package_name: caffeine
         app_name:     Caffeine
       - package_name: dash
         app_name:     Dash
+      - package_name: firefox
+        app_name:     Firefox
+      - package_name: kaleidoscope
+        app_name:     Kaleidoscope
+      - package_name: marked
+        app_name:     'Marked 2'
+      - package_name: opera
+        app_name:     Opera
+      - package_name: reflector
+        app_name:     Reflector
+    atom_editor:
+      packages:
+        - package_name: atom-beautify
+        - package_name: git-plus
+        - package_name: markdown-scroll-sync
+        - package_name: minimap
+        - package_name: react
+        - package_name: react-snippets
+        - package_name: refactor
+        - package_name: sort-lines
+        - package_name: vim-mode
+    rubymotion:
+      platforms:
+        - platform_name:  android
+        - platform_name:  apple
