@@ -1,10 +1,10 @@
 # Provision &mdash; Ansible
 
-*Template for provisioning local OSX machine for web apps development*
+*Template for provisioning local macOS machine for web apps development*
 
 ## Requirements
 
-- [Python](http://www.python.org) installed (usually bundled with OSX)
+- [Python](http://www.python.org) installed (usually bundled with macOS)
 - [Ansible](http://docs.ansible.com) [installed](http://docs.ansible.com/intro_installation.html#latest-releases-via-pip)
 
 ## Quickstart
