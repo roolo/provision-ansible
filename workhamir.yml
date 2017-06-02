@@ -49,16 +49,3 @@
         app_name:     pgAdmin3
     npm_packages:
       - bower
-    atom_editor:
-      packages:
-        - package_name: atom-beautify
-        - package_name: git-plus
-        - package_name: jira-issue-search
-        - package_name: language-docker
-        - package_name: markdown-scroll-sync
-        - package_name: minimap
-        - package_name: react
-        - package_name: react-snippets
-        - package_name: refactor
-        - package_name: sort-lines
-        - package_name: vim-mode
