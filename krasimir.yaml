@@ -11,13 +11,6 @@
       tags:
         - atom
         - editor
-    - role: rooland-provisioning.rubymotion
-      tags:
-        - android
-        - ios
-        - osx
-        - ruby
-        - rubymotion
     - role: rooland-provisioning.vim-machine
       tags:
         - editor
@@ -27,9 +20,6 @@
         - dev
         - language
         - ruby
-    - role: ssl-requester
-      tags:
-        - ssl
     - role: terminal
       tags:
         - terminal
