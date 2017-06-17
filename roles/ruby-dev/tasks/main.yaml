@@ -1,0 +1,42 @@
+---
+- name: Install apps
+  homebrew_cask:
+    name:   "{{ item.app_name }}"
+    state:  present
+  with_items:
+    - app_name: jewelrybox
+    - app_name: rubymine
+
+- name: Start JewelryBox / Install RVM
+  command: open -a JewelryBox
+  args:
+    creates:  ~/.rvm
+
+- name: Setup RubyGems
+  lineinfile:
+    create: yes
+    dest:   ~/.gemrc
+    line:   'gem: --no-ri --no-rdoc'
+    state:  present
+
+- name: Setup default gems
+  lineinfile:
+    create: yes
+    dest:   ~/.rvm/gemsets/global.gems
+    line:   "{{ item.gem_name }}"
+    state:  present
+  with_items:
+    - gem_name: debase
+    - gem_name: git-up
+    - gem_name: powder
+    - gem_name: ruby-debug-ide
+
+- name: Ensure there is place for my projects
+  file:
+    dest:   ~/Projects/my
+    state:  directory
+
+- name: Clone toolset for repos
+  git:
+    dest: ~/Projects/my/projects
+    repo: git@github.com:roolo/projects.git
