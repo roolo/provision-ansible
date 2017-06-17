@@ -1,7 +1,0 @@
----
-- name:     Initialize cask
-  command:  brew tap phinze/cask creates=/usr/local/Library/Taps/caskroom/homebrew-cask
-
-- name: Install brew-cask (the command)
-  homebrew: name=brew-cask state=present
-
