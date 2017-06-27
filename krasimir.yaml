@@ -62,6 +62,7 @@
     atom_editor:
       packages:
         - package_name: atom-beautify
+        - package_name: close-on-left
         - package_name: git-plus
         - package_name: markdown-scroll-sync
         - package_name: minimap
