@@ -5,10 +5,8 @@
     state:  present
   with_items: "{{ packages }}"
 
-- name: Install graphviz
-  homebrew: name=graphviz state=present install_options=with-app
-
-- include: ../../casked/tasks/main.yml
+#- name: Install graphviz
+#  homebrew: name=graphviz state=present install_options=with-app
 
 - name: Install Apps for OSX
   homebrew_cask:
