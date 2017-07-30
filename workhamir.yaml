@@ -2,6 +2,11 @@
 - hosts: localhost
   roles:
     - git-client
+    - role: git-gpg
+      tags:
+        - git
+        - git-gpg
+        - gpg
     - homebrew-machine
     - mysql-machine
     - rooland-provisioning.atom-editor

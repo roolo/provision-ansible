@@ -4,6 +4,11 @@
     - role: git-client
       tags:
         - git
+    - role: git-gpg
+      tags:
+        - git
+        - git-gpg
+        - gpg
     - role: homebrew-machine
       tags:
         - homebrew
@@ -31,7 +36,6 @@
     packages:
       - brew-pip
       - ffmpeg
-      - gpg
       - gpp
       - htop-osx
       - icu4c
