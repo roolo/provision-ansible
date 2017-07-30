@@ -1,4 +1,0 @@
-export PATH=/usr/local/bin:$PATH
-export PATH=$PATH:$HOME/.rvm/bin
-export RACK_ENV=development
-export EDITOR="mvim -f"
