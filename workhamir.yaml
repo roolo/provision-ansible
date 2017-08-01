@@ -8,10 +8,8 @@
         - git-gpg
         - gpg
     - homebrew-machine
-    - mysql-machine
     - rooland-provisioning.atom-editor
     - ruby-dev
-    - ssl-requester
     - terminal
     - vim-machine
     - zsh-terminal
@@ -50,7 +48,19 @@
         app_name:     'Marked 2'
       - package_name: opera
         app_name:     Opera
-      - package_name: pgadmin3
-        app_name:     pgAdmin3
+      - package_name: pgadmin4
+        app_name:     pgAdmin4
+    atom_editor:
+      packages:
+        - package_name: atom-beautify
+        - package_name: close-on-left
+        - package_name: git-plus
+        - package_name: markdown-scroll-sync
+        - package_name: minimap
+        - package_name: react
+        - package_name: react-snippets
+        - package_name: refactor
+        - package_name: sort-lines
+        - package_name: vim-mode
     npm_packages:
       - bower
