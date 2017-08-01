@@ -2,6 +2,14 @@
 - name: Install git
   homebrew: name=git state=present
 
+- name: Use ssh-agent on macOS
+  blockinfile:
+    block: |
+      Host *
+        UseKeychain yes
+    create: yes
+    dest:   ~/.ssh/config
+
 - name: Link git global ignore file
   file:
     dest:   "{{git_gitignore_global_path}}"
