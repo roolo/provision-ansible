@@ -6,6 +6,7 @@
   with_items:
     - app_name: jewelrybox
     - app_name: rubymine
+  ignore_errors: yes
 
 - name: Start JewelryBox / Install RVM
   command: open -a JewelryBox
