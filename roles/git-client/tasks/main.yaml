@@ -29,3 +29,4 @@
   homebrew_cask:
     name:   tower
     state:  present
+  ignore_errors: yes
