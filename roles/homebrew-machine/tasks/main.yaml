@@ -13,3 +13,4 @@
     name:   "{{ item.package_name }}"
     state:  present
   with_items: "{{ apps }}"
+  ignore_errors:  yes
