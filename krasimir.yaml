@@ -47,6 +47,7 @@
       - openssl
       - potrace
       - sqlite
+      - tree
       - wget
     apps:
       - package_name: caffeine
@@ -74,7 +75,7 @@
         - package_name: react-snippets
         - package_name: refactor
         - package_name: sort-lines
-        - package_name: vim-mode
+        - package_name: vim-mode-plus
     rubymotion:
       platforms:
         - platform_name:  android

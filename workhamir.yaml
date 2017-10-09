@@ -31,6 +31,7 @@
       - postgresql
       - redis
       - sqlite
+      - tree
       - v8
       - wget
     apps:
@@ -61,6 +62,6 @@
         - package_name: react-snippets
         - package_name: refactor
         - package_name: sort-lines
-        - package_name: vim-mode
+        - package_name: vim-mode-plus
     npm_packages:
       - bower
