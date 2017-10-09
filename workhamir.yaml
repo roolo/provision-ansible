@@ -8,8 +8,15 @@
         - git-gpg
         - gpg
     - homebrew-machine
-    - rooland-provisioning.atom-editor
-    - ruby-dev
+    - role: rooland-provisioning.atom-editor
+      tags:
+        - atom
+        - editor
+    - role: ruby-dev
+      tags:
+        - dev
+        - language
+        - ruby
     - terminal
     - vim-machine
     - zsh-terminal
