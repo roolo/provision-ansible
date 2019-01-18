@@ -11,4 +11,5 @@ tags:
 	ctags -R .
 
 install_dependencies:
+	brew bundle
 	ansible-galaxy install --force -r roles-galaxy.yaml
