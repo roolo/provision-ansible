@@ -33,4 +33,5 @@ cask "keybase"
 cask "kdiff3"
 cask "macvim"
 cask "reflector"
+cask 'screens-connect'
 cask "textexpander"
