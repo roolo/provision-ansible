@@ -17,7 +17,7 @@
   lineinfile:
     create: yes
     dest:   ~/.gemrc
-    line:   'gem: --no-ri --no-rdoc'
+    line:   'gem: --no-ri --no-rdoc --no-document'
     state:  present
 
 - name: Setup default gems
