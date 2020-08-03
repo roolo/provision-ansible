@@ -29,37 +29,6 @@
         - terminal
         - zsh
   vars:
-    packages:
-      - brew-pip
-      - ffmpeg
-      - gpp
-      - htop-osx
-      - icu4c
-      - imagemagick
-      - jpeg
-      - libxml2
-      - multimarkdown
-      - node
-      - openssl
-      - potrace
-      - sqlite
-      - tree
-      - wget
-    apps:
-      - package_name: caffeine
-        app_name:     Caffeine
-      - package_name: dash
-        app_name:     Dash
-      - package_name: firefox
-        app_name:     Firefox
-      - package_name: kaleidoscope
-        app_name:     Kaleidoscope
-      - package_name: marked
-        app_name:     'Marked 2'
-      - package_name: opera
-        app_name:     Opera
-      - package_name: reflector
-        app_name:     Reflector
     rubymotion:
       platforms:
         - platform_name:  android
