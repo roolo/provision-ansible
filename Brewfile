@@ -37,4 +37,5 @@ cask "textexpander"
 cask 'fork'
 cask 'kaleidoscope'
 cask 'screens-connect'
+cask 'marked'
 tap "phinze/cask"
