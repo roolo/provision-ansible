@@ -28,7 +28,6 @@ brew "yarn"
 brew "youtube-dl"
 cask "franz"
 cask "gpg-suite"
-cask "kdiff3"
 cask 'dash'
 cask "keybase"
 cask "macvim"
