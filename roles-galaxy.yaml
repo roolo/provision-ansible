@@ -1,5 +1,3 @@
-- src:      rooland-provisioning.atom-editor
-  version:  v0.0.3
 - src:      rooland-provisioning.vim-machine
   version:  v0.0.2
 - name:     zsh-terminal
