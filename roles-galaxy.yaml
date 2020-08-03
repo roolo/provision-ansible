@@ -4,5 +4,5 @@
   version:  v0.0.1
   src:      rooland-provisioning.zsh-terminal
 - name:     git-gpg
-  version:  v0.0.1
+  version:  v0.0.5
   src:      rooland-provisioning.git-gpg
