@@ -64,3 +64,6 @@
       platforms:
         - platform_name:  android
         - platform_name:  apple
+    git_gpg:
+      git:
+        signing_key: CA391F82
