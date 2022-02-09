@@ -7,10 +7,6 @@
         - git
         - git-gpg
         - gpg
-    - role: rooland-provisioning.atom-editor
-      tags:
-        - atom
-        - editor
     - role: ruby-dev
       tags:
         - dev
