@@ -34,7 +34,7 @@ cask "macvim"
 cask "reflector"
 cask "textexpander"
 cask 'fork'
-cask 'kaleidoscope'
+cask 'kaleidoscope2'
 cask 'screens-connect'
 cask 'marked'
-tap "phinze/cask"
+mas 'Pixelmator Pro', id: 1289583905
