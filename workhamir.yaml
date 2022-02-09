@@ -13,7 +13,10 @@
         - language
         - ruby
     - terminal
-    - vim-machine
+    - role: rooland-provisioning.vim-machine
+      tags:
+        - editor
+        - vim
     - zsh-terminal
   vars:
     git_gpg:
