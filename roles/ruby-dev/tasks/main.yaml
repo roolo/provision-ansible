@@ -1,18 +1,4 @@
 ---
-- name: Install apps
-  homebrew_cask:
-    name:   "{{ item.app_name }}"
-    state:  present
-  with_items:
-    - app_name: jewelrybox
-    - app_name: rubymine
-  ignore_errors: yes
-
-- name: Start JewelryBox / Install RVM
-  command: open -a JewelryBox
-  args:
-    creates:  ~/.rvm
-
 - name: Setup RubyGems
   lineinfile:
     create: yes
@@ -27,7 +13,6 @@
     line:   "{{ item.gem_name }}"
     state:  present
   with_items:
-    - gem_name: debase
     - gem_name: git-up
     - gem_name: powder
     - gem_name: ruby-debug-ide
@@ -37,7 +22,8 @@
     dest:   ~/Projects/my
     state:  directory
 
-- name: Clone toolset for repos
-  git:
-    dest: ~/Projects/my/projects
-    repo: git@github.com:roolo/projects.git
+      # - name: Clone toolset for repos
+      #   git:
+      #     dest: ~/Projects/my/projects
+      #     repo: git@github.com:roolo/projects.git
+      #     creates: ~/Projects/my/projects
