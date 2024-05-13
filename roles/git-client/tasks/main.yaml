@@ -28,7 +28,7 @@
 
 - name: Set autostash
   git_config:
-    name: rebase.autosquash
+    name: rebase.autoStash
     scope: global
-    value: true
+    value: 'true'
 
