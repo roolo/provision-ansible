@@ -1,6 +1,8 @@
 ---
 - name: Install git
-  homebrew: name=git state=present
+  package:
+    name:  git
+    state: present
 
 - name: Use ssh-agent on macOS
   blockinfile:
