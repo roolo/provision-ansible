@@ -1,5 +1,5 @@
 ---
 - name:     Initialize cask
   homebrew_tap:
-    name:   phinze/cask
+    name:   homebrew/cask
     state:  present
