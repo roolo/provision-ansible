@@ -24,13 +24,13 @@
 
 - name: Use global git ignore
   git_config:
-    name: core.excludesfile
-    scope: global
-    value: ~/.gitignore_global
+    name:   core.excludesfile
+    scope:  global
+    value:  ~/.gitignore_global
 
 - name: Set autostash
   git_config:
-    name: rebase.autoStash
-    scope: global
-    value: 'true'
+    name:   rebase.autoStash
+    scope:  global
+    value:  'true'
 
