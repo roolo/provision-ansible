@@ -13,7 +13,7 @@
         - language
         - ruby
     - terminal
-    - role: rooland-provisioning.vim-machine
+    - role: vim-machine
       tags:
         - editor
         - vim

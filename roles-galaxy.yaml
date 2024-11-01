@@ -1,8 +1,9 @@
-- src:      rooland-provisioning.vim-machine
-  version:  v0.0.2
+- name:     vim-machine
+  src:      rooland-provisioning.vim-machine
+  version:  v0.0.3
 - name:     zsh-terminal
   version:  v0.0.1
   src:      rooland-provisioning.zsh-terminal
 - name:     git-gpg
-  version:  v0.0.5
+  version:  v0.0.6
   src:      rooland-provisioning.git-gpg
