@@ -22,8 +22,8 @@
     dest:   ~/Projects/my
     state:  directory
 
-      # - name: Clone toolset for repos
-      #   git:
-      #     dest: ~/Projects/my/projects
-      #     repo: git@github.com:roolo/projects.git
-      #     creates: ~/Projects/my/projects
+- name: Clone toolset for repos
+  git:
+    dest: ~/Projects/my/projects
+    repo: git@github.com:roolo/projects.git
+    creates: ~/Projects/my/projects
