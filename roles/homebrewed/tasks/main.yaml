@@ -1,5 +1,0 @@
----
-- name:     Install Homebrew
-  command:  'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
-  args:
-    creates: /usr/local/bin/brew
