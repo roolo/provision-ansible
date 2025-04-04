@@ -1,6 +1,10 @@
-- name:     vim-machine
-  src:      rooland-provisioning.vim-machine
-  version:  v0.0.3
+---
+- name:     kitty-terminal
+  src:      rooland-provisioning.kitty-terminal
+  version:  v0.0.1
+- name:     neovim-machine
+  src:      rooland-provisioning.neovim-machine
+  version:  v0.0.1
 - name:     zsh-terminal
   version:  v0.0.1
   src:      rooland-provisioning.zsh-terminal

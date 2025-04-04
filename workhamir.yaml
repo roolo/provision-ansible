@@ -13,11 +13,12 @@
         - language
         - ruby
     - terminal
-    - role: vim-machine
+    - role: neovim-machine
       tags:
         - editor
         - vim
     - zsh-terminal
+    - kitty-terminal
   vars:
     git_gpg:
       git:

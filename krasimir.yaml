@@ -28,6 +28,10 @@
       tags:
         - terminal
         - zsh
+    - role: neovim-machine
+      tags:
+        - neovim
+    - kitty-terminal
   vars:
     git_gpg:
       git:
