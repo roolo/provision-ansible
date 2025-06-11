@@ -1,13 +1,13 @@
 ---
 - name:     kitty-terminal
   src:      rooland-provisioning.kitty-terminal
-  version:  v0.0.1
+  version:  v0.0.2
 - name:     neovim-machine
   src:      rooland-provisioning.neovim-machine
   version:  v0.0.1
 - name:     zsh-terminal
-  version:  v0.0.1
+  version:  v0.1.0
   src:      rooland-provisioning.zsh-terminal
 - name:     git-gpg
-  version:  v0.0.6
+  version:  v0.0.7
   src:      rooland-provisioning.git-gpg
